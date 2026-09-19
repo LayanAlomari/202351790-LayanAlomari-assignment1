@@ -127,3 +127,34 @@ button {
 button:hover {
   opacity: 0.85;
 }
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--box-color);
+  border-top: 1px solid var(--border-color);
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  section {
+    padding: 30px 15px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav a {
+    margin: 0 10px;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+}
