@@ -54,3 +54,30 @@ nav a {
 nav a:hover {
   text-decoration: underline;
 }
+
+/* About section */
+.tagline {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: var(--accent-color);
+}
+
+/* Projects section */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.project-box {
+  background-color: var(--box-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.project-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
