@@ -38,7 +38,9 @@ The page uses semantic tags to describe its structure:
 **Sections**
 - **About Me** (`#about`): greeting, tagline and a short introduction.
 - **Projects** (`#projects`): two project boxes (`<article class="project-box">`), each with a title, description and placeholder image.
-- **Contact** (`#contact`): a form with Name, Email and Message fields. Each field has a `<label>` linked by `for` and `id`, and uses `required` for basic validation.
+- **Contact** (`#contact`): a form with Name, Email and Message fields.
+
+The `<head>` contains the page title and the link to the stylesheet.
 
 ## 4. CSS Design
 
@@ -63,12 +65,8 @@ Two media queries adapt the layout:
 Dark mode is done with a `dark-mode` class on `<body>`. The rule `body.dark-mode` replaces the color variables with darker values, so the whole page changes at once. A few extra rules adjust heading colors and form fields for readability.
 
 ## 5. JavaScript Features
-The script is loaded at the end of `<body>` so the HTML elements exist before the code runs.
 
 ### Time-based greeting
-```js
-const hour = new Date().getHours();
-```
 `getHours()` returns the current hour (0 to 23). An `if / else if / else` chooses "Good morning!" (before 12), "Good afternoon!" (before 18) or "Good evening!". The text is placed in `<p id="greeting">` using `textContent`.
 
 ### Dark/light mode toggle
