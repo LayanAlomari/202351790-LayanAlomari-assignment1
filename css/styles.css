@@ -158,3 +158,29 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+/* Theme button */
+#theme-toggle {
+  margin-top: 0;
+  background-color: white;
+  color: var(--accent-color);
+}
+
+/* Dark mode */
+body.dark-mode {
+  --bg-color: #121a21;
+  --text-color: #e8edf1;
+  --box-color: #1c262f;
+  --border-color: #33424f;
+}
+
+body.dark-mode h2,
+body.dark-mode .tagline {
+  color: #5bb5e8;
+}
+
+body.dark-mode input,
+body.dark-mode textarea {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
