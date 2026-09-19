@@ -1,57 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>My Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-  <header>
-    <h1>My Portfolio</h1>
-    <nav>
-      <a href="#about">About Me</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-  <main>
-    <section id="about">
-        <h2>About Me</h2>
-        <p class="tagline">Computer science student who's always excited to learn something new.</p>
-        <p>
-            my name is Layan Alomari, a junior Computer Science student at King Fahd University of Petroleum and Minerals (KFUPM). 
-            I’m continuously developing my skills, exploring new areas of computer science, 
-            and seeking opportunities to learn, create, and grow as a future technology professional.
-        </p>
-    </section>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p class="tagline">Computer science student who's always excited to learn something new.</p>
+            <p>
+                my name is Layan Alomari, a junior Computer Science student at King Fahd University of Petroleum and
+                Minerals (KFUPM).
+                I’m continuously developing my skills, exploring new areas of computer science,
+                and seeking opportunities to learn, create, and grow as a future technology professional.
+            </p>
+        </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
+        <section id="projects">
+            <h2>Projects</h2>
 
-        <div class="projects-container">
-         <article class="project-box">
-          <h3>Project One: Flying Stars Game</h3>
-          <p>A fast-paced color-matching game where players guide a colored ball toward the matching edge of a growing star. 
-            The game tracks accuracy and reaction time, challenging players to think and act quickly.</p>
-            <img src="https://placehold.co/400x250" alt="Project 1 preview">
-         </article>
+            <div class="projects-container">
+                <article class="project-box">
+                    <h3>Project One: Flying Stars Game</h3>
+                    <p>A fast-paced color-matching game where players guide a colored ball toward the matching edge of a
+                        growing star.
+                        The game tracks accuracy and reaction time, challenging players to think and act quickly.</p>
+                    <img src="https://placehold.co/400x250" alt="Project 1 preview">
+                </article>
 
-         <article class="project-box">
-          <h3>Project Two: Daleel KFUPM platform</h3>
-          <p>Daleel KFUPM is a digital platform that brings academic resources, past exams, student experiences, and course information together in one organized place. 
-            It helps KFUPM students find what they need quickly and makes their academic journey easier and less stressful.</p>
-            <img src="https://placehold.co/400x250" alt="Project 2 preview">
-         </article>
-        </div>
-    </section>
+                <article class="project-box">
+                    <h3>Project Two: Daleel KFUPM Platform</h3>
+                    <p>Daleel KFUPM is a digital platform that brings academic resources, past exams, student
+                        experiences, and course information together in one organized place.
+                        It helps KFUPM students find what they need quickly and makes their academic journey easier and
+                        less stressful.</p>
+                    <img src="https://placehold.co/400x250" alt="Project 2 preview">
+                </article>
+            </div>
+        </section>
 
-    <section id="contact">
-    </section>
-  </main>
+        <section id="contact">
+            <h2>Contact</h2>
+            <form id="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
 
-  <footer>
-  </footer>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
 
-  <script src="js/script.js"></script>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Layan Alomari</p>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
+
 </html>
