@@ -1,0 +1,31 @@
+/* Colors */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #222222;
+  --accent-color: #0a5987;
+  --box-color: #f4f6f8;
+  --border-color: #d0d5db;
+}
+
+/* General */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: var(--accent-color);
+}
